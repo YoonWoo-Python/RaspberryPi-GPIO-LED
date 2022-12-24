@@ -9,9 +9,9 @@ gpio.setup(LED_pin, gpio.OUT)
 try:
     while True:
         gpio.output(LED_pin, gpio.HIGH)
-        time.sleep(1)
+        time.sleep(0.5)
         gpio.output(LED_pin, gpio.LOW)
-        time.sleep(1)
+        time.sleep(0.5)
 
 finally: 
     gpio.cleanup()
